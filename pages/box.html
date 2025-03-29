@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box</title>
+    <!-- Link to the Tailwind CSS output file -->
+    <link href="../dist/output.css" rel="stylesheet">
+</head>
+<body>
+
+    <div id="navbar"></div>
+    <div id="footer"></div>
+
+    <div>
+        <p>test</p>
+    </div>
+
+    <script type="module">
+        import { loadComponent } from '../src/js/load-component.js'
+
+        document.addEventListener('DOMContentLoaded', () => {
+            loadComponent('navbar', '../src/components/navbar.html')
+            loadComponent('footer', '../src/components/footer.html')
+        })
+    </script>
+    
+</body>
+</html>
